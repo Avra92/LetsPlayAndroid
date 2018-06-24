@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AddGameActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black"
+              android:orientation="vertical"
+              android:padding="16dp">
 
-</android.support.constraint.ConstraintLayout>
+    <Spinner
+        android:id="@+id/spn_AddGameActivity_Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/addgame_games"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_AddGameActivity_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select the platform or type of ID"/>
+
+    <EditText
+        android:id="@+id/et_AddGameActivity_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Game ID or Tag"/>
+
+    <Spinner
+        android:id="@+id/spn_AddGameActivity_Platform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_AddGameActivity_Info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_AddGameActivity_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="ADD"
+        android:textColor="@color/black"/>
+</LinearLayout>

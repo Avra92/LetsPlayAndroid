@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Let\'s Play</string>
+    <string-array name="register_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="home_letsplay">Let\'s\nPlay</string>
+    <string name="home_deletegame">Delete\nGame</string>
+    <string name="home_addfriends">Add\nFriends</string>
+    <string-array name="addgame_games">
+        <item>Counter Strike: Global Offensive</item>
+        <item>Fortnite</item>
+        <item>Clash of Clans</item>
+        <item>Clash Royale</item>
+    </string-array>
+    <string-array name="addgame_csgo">
+        <item>Custom URL ID</item>
+        <item>Steam 64 ID</item>
+    </string-array>
+    <string-array name="addgame_fort">
+        <item>PC</item>
+        <item>PS4</item>
+        <item>Xbox</item>
+    </string-array>
+    <string-array name="addgame_coccr">
+        <item>Android</item>
+        <item>iOS</item>
+    </string-array>
 </resources>

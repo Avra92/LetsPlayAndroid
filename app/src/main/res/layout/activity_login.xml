@@ -9,11 +9,12 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/til_LoginActivity_Username"
+        android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@mipmap/ic_launcher"
-        app:srcCompat="@mipmap/ic_launcher"/>
+        android:src="@drawable/logo"
+        app:srcCompat="@drawable/logo"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/til_LoginActivity_Username"
@@ -38,7 +39,8 @@
             android:id="@+id/et_LoginActivity_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"/>
+            android:hint="Password"
+            android:inputType="textPassword"/>
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -46,7 +48,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/til_LoginActivity_Password"
-        android:text="Login"/>
+        android:background="@color/yellow"
+        android:text="Login"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/tv_LoginActivity_ForgotPassword"
@@ -62,5 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Register"/>
+        android:background="@color/purple"
+        android:text="Register"
+        android:textColor="@color/white"/>
 </RelativeLayout>

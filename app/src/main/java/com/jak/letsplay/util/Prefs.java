@@ -1,4 +1,4 @@
-package com.jak.letsplay;
+package com.jak.letsplay.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,7 +7,7 @@ public class Prefs {
     private static Prefs prefs;
     private SharedPreferences preferences;
 
-    public static Prefs getInstance(Context context) {
+    public static synchronized Prefs getInstance(Context context) {
         if (prefs == null) {
             prefs = new Prefs(context);
         }
@@ -27,5 +27,9 @@ public class Prefs {
 
     public String get(String key) {
         return preferences.getString(key, "");
+    }
+
+    public void remove(String key) {
+        preferences.edit().remove(key).apply();
     }
 }
