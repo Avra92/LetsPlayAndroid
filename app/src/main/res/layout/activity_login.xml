@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/til_LoginActivity_Username"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_LoginActivity_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/til_LoginActivity_Password">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_LoginActivity_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_LoginActivity_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_LoginActivity_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_LoginActivity_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_LoginActivity_Password"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/tv_LoginActivity_ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_LoginActivity_Login"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:text="Forgot Password?"/>
+
+    <Button
+        android:id="@+id/btn_LoginActivity_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Register"/>
+</RelativeLayout>
